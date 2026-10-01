@@ -15,3 +15,7 @@ def delete_task(number):
     if 1 <= number <= len(tasks):
         tasks.pop(number - 1)
         #123
+        def search_tasks(query):
+    for task in tasks:
+        if query.lower() in task.lower():
+            print(task)
